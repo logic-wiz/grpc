@@ -189,7 +189,8 @@ Pod::Spec.new do |s|
     ss.libraries = 'z'
     ss.dependency "#{s.name}/Interface", version
     ss.dependency 'BoringSSL', '~> 9.0'
-    ss.dependency 'nanopb', '~> 0.3'
+    #ss.dependency 'nanopb', '~> 0.3'
+    ss.dependency 'nanopb', '< 2.30910.0, >= 2.30908.0'
 
     # To save you from scrolling, this is the last part of the podspec.
     ss.source_files = 'src/core/lib/gpr++/abstract.h',
